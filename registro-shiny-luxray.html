@@ -1,208 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Registro • Shiny Luxray</title>
+<meta charset="UTF-8">
+<title>Shiny Luxray • PXG</title>
 
-  <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #020f1f, #0a2a4a, #ffffff);
-    color: #ffffff;
-  }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0b1c2d, #1f3a5f);
+  color: #ffffff;
+}
 
-  .container {
-    max-width: 640px;
-    margin: 40px auto;
-    background: rgba(2, 15, 31, 0.9);
-    padding: 26px;
-    border-radius: 18px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.7);
-  }
+.container {
+  max-width: 680px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.92);
+  color: #1c1c1c;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.45);
+}
 
-  h1 {
-    text-align: center;
-    margin-bottom: 6px;
-    color: #7fc8ff;
-  }
+h1 {
+  text-align: center;
+  margin-bottom: 4px;
+}
 
-  h2 {
-    text-align: center;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #cce9ff;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0;
+  color: #0d47a1;
+}
 
-  img {
-    display: block;
-    margin: 20px auto;
-    max-width: 180px;
-    filter: drop-shadow(0 0 14px rgba(120,190,255,0.8));
-  }
+img {
+  display: block;
+  margin: 22px auto;
+  max-width: 190px;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
 
-  td {
-    padding: 10px 6px;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-  }
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+}
 
-  td:first-child {
-    font-weight: bold;
-    width: 50%;
-  }
+td:first-child {
+  font-weight: bold;
+  width: 50%;
+}
 
-  a {
-    display: block;
-    margin-top: 22px;
-    text-align: center;
-    color: #7fc8ff;
-    text-decoration: none;
-    font-weight: bold;
-  }
+tr:last-child td {
+  border-bottom: none;
+}
 
-  .footer {
-    margin-top: 24px;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #dcefff;
-  }
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #37474f;
+}
+
+a {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+}
 </style>
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #8b0000, #ffffff);
-      color: #ffffff;
-    }
-
-    .container {
-      max-width: 640px;
-      margin: 40px auto;
-      background: rgba(0, 0, 0, 0.55);
-      padding: 26px;
-      border-radius: 18px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.6);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 6px;
-    }
-
-    h2 {
-      text-align: center;
-      font-weight: normal;
-      font-size: 1rem;
-      color: #ffd700;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      max-width: 180px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 16px;
-    }
-
-    td {
-      padding: 10px 6px;
-      border-bottom: 1px solid rgba(255,255,255,0.25);
-    }
-
-    td:first-child {
-      font-weight: bold;
-      width: 50%;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    a {
-      display: block;
-      margin-top: 22px;
-      text-align: center;
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .footer {
-      margin-top: 24px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #eeeeee;
-    }
-  </style>
 </head>
 
 <body>
 
 <div class="container">
 
-  <h1>⚡ Registro de Negociação</h1>
-  <h2>PokeXGames • Shiny Luxray</h2>
+<h1>⚡ Registro de Negociação</h1>
+<h2>PokeXGames • <strong>Shiny Luxray</strong></h2>
 
-  <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
+<img src="assets/shiny-luxray.png" alt="Shiny Luxray">
 
-  <table>
-    <tr>
-      <td>📅 Data</td>
-      <td>27/09/2025</td>
-    </tr>
+<table>
+  <tr>
+    <td>📅 Data</td>
+    <td>27/09/2025</td>
+  </tr>
 
-    <tr>
-      <td>⚡ Pokémon</td>
-      <td>Shiny Luxray</td>
-    </tr>
+  <tr>
+    <td>⚡ Pokémon</td>
+    <td>Shiny Luxray</td>
+  </tr>
 
-    <tr>
-      <td>🏷️ Categoria</td>
-      <td>T1C</td>
-    </tr>
+  <tr>
+    <td>🏷️ Categoria</td>
+    <td>T1C</td>
+  </tr>
 
-    <tr>
-      <td>💰 Valor Estimado (KK / R$)</td>
-      <td>155 KK • R$ 500</td>
-    </tr>
+  <tr>
+    <td>💰 Valor Estimado (KK)</td>
+    <td>155 KK — R$ 500</td>
+  </tr>
 
-    <tr>
-      <td>💰 Valor Final em R$</td>
-      <td>R$ 516</td>
-    </tr>
+  <tr>
+    <td>💵 Valor em R$</td>
+    <td>R$ 516</td>
+  </tr>
 
-    <tr>
-      <td>🔁 Utilização</td>
-      <td>Usado como parte do pagamento do Shiny Dragonair</td>
-    </tr>
+  <tr>
+    <td>🔁 Utilização</td>
+    <td>Usado como parte do pagamento do Shiny Dragonair</td>
+  </tr>
 
-    <tr>
-      <td>📝 Observações</td>
-      <td>
-        Shiny Luxray entregue + 1250 💎 + 1.57 KKK
-      </td>
-    </tr>
-  </table>
+  <tr>
+    <td>📝 Observações</td>
+    <td>Shiny Luxray entregue + 1250 💎 + 1.57 KKK</td>
+  </tr>
+</table>
 
-  <div class="footer">
-    Registro atemporal de negociação • PXG
-  </div>
+<div class="footer">
+⚡ Registro estratégico • Planejamento PXG ⚡
+</div>
 
-  <a href="index.html">⬅ Voltar ao menu</a>
+<a href="index.html">⬅ Voltar ao menu</a>
 
 </div>
 
