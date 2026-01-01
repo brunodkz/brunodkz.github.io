@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Shiny Machamp • PXG</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f9d423, #ffb347);
+  color: #2b2b2b;
+}
+
+.container {
+  max-width: 680px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0;
+  color: #5d4037;
+}
+
+img {
+  display: block;
+  margin: 22px auto;
+  max-width: 190px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 50%;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6d4c41;
+}
+
+a {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+  color: #1a237e;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🐉 Registro de Negociação</h1>
+<h2>PokeXGames • <strong>Shiny Machamp</strong></h2>
+
+<img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
+
+<table>
+  <tr>
+    <td>📅 Data</td>
+    <td>17/08/2025</td>
+  </tr>
+
+  <tr>
+    <td>⚡ Pokémon</td>
+    <td>Shiny Dragonair</td>
+  </tr>
+
+  <tr>
+    <td>🏷️ Categoria</td>
+    <td>T1C</td>
+  </tr>
+
+  <tr>
+    <td>💰 Valor Pago</td>
+    <td>300KK + 1.100💎</td>
+  </tr>
+ <tr>
+    <td>💲Total de preco do 💎</td>
+    <td>R$ 3,50 cada - 385KK</td>
+  </tr>
+  <tr>
+    <td>💲 Preço por KK</td>
+    <td>R$ 3,50</td>
+  </tr>
+
+  <tr>
+    <td>💵 Valor Total</td>
+    <td>R$ 1.500-2000</td>
+  </tr>
+
+  <tr>
+    <td>🔁 Origem</td>
+    <td>Negociação envolvendo 300KKs e 1.100💎 Diamonds</td>
+  </tr>
+
+  <tr>
+    <td>📝 Observações</td>
+    <td>Registro histórico de conquista pessoal no PXG</td>
+  </tr>
+</table>
+
+<div class="footer">
+🔥 Registro histórico • Conquista pessoal • PXG 🔥
+</div>
+
+<a href="index.html">⬅ Voltar ao menu</a>
+
+</div>
+
+</body>
+</html>
