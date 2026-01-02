@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Planejamento PXG</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #b0bec5;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* CARD BASE */
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+}
+
+.card img {
+  max-width: 140px;
+  margin-bottom: 16px;
+}
+
+/* BOTÃO */
+.card a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* DRAGONAIR */
+.dragonair {
+  background: linear-gradient(135deg, #f9d423, #ffb347);
+  color: #2b2b2b;
+}
+.dragonair a {
+  background: #ffffff;
+  color: #6d4c41;
+}
+
+/* LUXRAY */
+.luxray {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+}
+.luxray a {
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+/* MACHAMP */
+.machamp {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: #2b1b00;
+}
+.machamp a {
+  background: #3e2723;
+  color: #ffcc80;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #cfd8dc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>📊 Planejamento PXG</h1>
+  <div class="subtitle">Registros estratégicos • Shinys • Negociações</div>
+
+  <div class="grid">
+
+    <!-- DRAGONAIR -->
+    <div class="card dragonair">
+      <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
+      <h3>🐉 Shiny Dragonair</h3>
+      <a href="registro-shiny-dragonair.html">Ver Registro</a>
+    </div>
+
+    <!-- LUXRAY -->
+    <div class="card luxray">
+      <img src="assets/shiny-luxray.gif" alt="Shiny Luxray">
+      <h3>⚡ Shiny Luxray</h3>
+      <a href="registro-shiny-luxray.html">Ver Registro</a>
+    </div>
+
+    <!-- MACHAMP -->
+    <div class="card machamp">
+      <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
+      <h3>👊 Shiny Machamp</h3>
+      <a href="registro-shiny-machamp.html">Ver Registro</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    🔥 Planejamento vivo • Evolução constante • PXG 🔥
+  </div>
+</div>
+
+</body>
+</html>
