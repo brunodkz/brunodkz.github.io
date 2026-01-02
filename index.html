@@ -8,78 +8,79 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
-  color: #ffffff;
+  background: url("assets/pokeballs-bg.png") repeat;
+  background-size: 300px;
+  color: #2b2b2b;
 }
 
 header {
   text-align: center;
-  padding: 30px 10px;
+  padding: 40px 20px 20px;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.2rem;
 }
 
-.container {
+header p {
+  margin-top: 8px;
+  color: #444;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  max-width: 1000px;
+  margin: 30px auto 60px;
   padding: 0 20px;
 }
 
 .card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.9);
   border-radius: 18px;
-  padding: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.7);
 }
 
 .card img {
-  max-width: 140px;
-  margin: 12px auto;
+  max-width: 160px;
+  margin: 10px auto 16px;
   display: block;
 }
 
 .card h2 {
-  margin: 10px 0 6px;
+  margin: 8px 0 6px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .card a {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 14px;
   padding: 10px 18px;
-  border-radius: 14px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
   color: #fff;
 }
 
 /* BOTÕES */
-.btn-dragonair {
-  background: linear-gradient(135deg, #f9d423, #ffb347);
-  color: #2b2b2b;
-}
+.btn-dragonair { background: #f9a825; }
+.btn-luxray    { background: #0d47a1; }
+.btn-machamp   { background: #ef6c00; }
+.btn-tangela   { background: #2e7d32; }
 
-.btn-luxray {
-  background: linear-gradient(135deg, #0a1a2f, #123b66);
-}
-
-.btn-machamp {
-  background: linear-gradient(135deg, #ff9800, #e65100);
-}
-
-.btn-tangela {
-  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 30px;
 }
 </style>
 </head>
@@ -87,36 +88,39 @@ header h1 {
 <body>
 
 <header>
-  <h1>📊 Planejamento PXG</h1>
-  <p>Registros históricos de negociações</p>
+  <h1>📘 Planejamento PXG</h1>
+  <p>Registros históricos • Conquistas • Negociações</p>
 </header>
 
-<div class="container">
+<div class="grid">
 
   <!-- DRAGONAIR -->
   <div class="card">
     <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
     <h2>🐉 Shiny Dragonair</h2>
+    <p>Registro de negociação T1B</p>
     <a class="btn-dragonair" href="registro-shiny-dragonair.html">
-      Ver registro
+      Ver Registro
     </a>
   </div>
 
-  <!-- LUXRAY (PNG APLICADO AQUI) -->
+  <!-- LUXRAY -->
   <div class="card">
-    <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
+    <img src="assets/shiny-luxray.gif" alt="Shiny Luxray">
     <h2>⚡ Shiny Luxray</h2>
+    <p>Registro estratégico T1C</p>
     <a class="btn-luxray" href="registro-shiny-luxray.html">
-      Ver registro
+      Ver Registro
     </a>
   </div>
 
   <!-- MACHAMP -->
   <div class="card">
     <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
-    <h2>👊 Shiny Machamp</h2>
+    <h2>💪 Shiny Machamp</h2>
+    <p>Planejamento de TM</p>
     <a class="btn-machamp" href="registro-shiny-machamp.html">
-      Ver registro
+      Ver Registro
     </a>
   </div>
 
@@ -124,12 +128,17 @@ header h1 {
   <div class="card">
     <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
     <h2>🌿 Shiny Tangela</h2>
+    <p>Negociação estratégica</p>
     <a class="btn-tangela" href="registro-shiny-tangela.html">
-      Ver registro
+      Ver Registro
     </a>
   </div>
 
 </div>
+
+<footer>
+🔥 Planejamento PXG • BrunoDKZ • GPTZADA 🔥
+</footer>
 
 </body>
 </html>
