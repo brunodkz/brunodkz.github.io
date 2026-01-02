@@ -2,66 +2,55 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Planejamento PXG</title>
+<title>📘 Planejamento PXG</title>
 
 <style>
-/* ===== FUNDO GERAL ===== */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: url("assets/pokeballs-bg.png") repeat;
   background-size: 300px;
-  color: #2b2b2b;
 }
 
-/* ===== HEADER ===== */
-header {
-  text-align: center;
-  padding: 40px 20px 20px;
-}
-
-/* BALÃO DO TOPO */
-.header-box {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.92);
-  padding: 22px 36px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-}
-
-header p {
-  margin-top: 8px;
-  color: #444;
-  font-weight: 500;
-}
-
-/* ===== CONTAINER DOS CARDS ===== */
-.container {
+.header {
   max-width: 900px;
   margin: 30px auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  background: rgba(255,255,255,0.92);
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
 }
 
-/* ===== CARD BASE ===== */
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #444;
+}
+
+.grid {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  padding: 10px;
+}
+
 .card {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.9);
   border-radius: 18px;
   padding: 18px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-  transition: transform 0.2s ease;
+  transition: transform 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .card img {
@@ -70,65 +59,62 @@ header p {
 }
 
 .card h3 {
-  margin: 10px 0 12px;
+  margin: 8px 0;
 }
 
-/* ===== BOTÕES ===== */
 .card a {
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 18px;
   border-radius: 14px;
-  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  color: white;
 }
 
 /* CORES DOS BOTÕES */
-.btn-dragonair { background: #f9a825; }
-.btn-luxray    { background: #0d47a1; }
-.btn-machamp   { background: #ef6c00; }
-.btn-tangela   { background: #2e7d32; }
-
+.dragonair a { background: #fbc02d; color: #2b2b2b; }
+.luxray a    { background: #0d2a4a; }
+.machamp a   { background: #e65100; }
+.tangela a   { background: #2e7d32; }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="header-box">
-    <h1>📘 Planejamento PXG</h1>
-    <p>Registros históricos • Conquistas • Negociações</p>
-  </div>
-</header>
+<div class="header">
+  <h1>📘 Planejamento PXG</h1>
+  <p>Registros históricos • Conquistas • Negociações</p>
+</div>
 
-<div class="container">
+<div class="grid">
 
-  <!-- DRAGONAIR -->
-  <div class="card">
+  <!-- SHINY DRAGONAIR -->
+  <div class="card dragonair">
     <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
     <h3>🐉 Shiny Dragonair</h3>
-    <a class="btn-dragonair" href="registro-shiny-dragonair.html">Abrir Registro</a>
+    <a href="registro-shiny-dragonair.html">Abrir registro</a>
   </div>
 
-  <!-- LUXRAY -->
-  <div class="card">
-    <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
+  <!-- SHINY LUXRAY (GIF FUNCIONANDO) -->
+  <div class="card luxray">
+    <img src="assets/shiny-luxray.gif" alt="Shiny Luxray">
     <h3>⚡ Shiny Luxray</h3>
-    <a class="btn-luxray" href="registro-shiny-luxray.html">Abrir Registro</a>
+    <a href="registro-shiny-luxray.html">Abrir registro</a>
   </div>
 
-  <!-- MACHAMP -->
-  <div class="card">
+  <!-- SHINY MACHAMP -->
+  <div class="card machamp">
     <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
     <h3>👊 Shiny Machamp</h3>
-    <a class="btn-machamp" href="registro-shiny-machamp.html">Abrir Registro</a>
+    <a href="registro-shiny-machamp.html">Abrir registro</a>
   </div>
 
-  <!-- TANGELA -->
-  <div class="card">
+  <!-- SHINY TANGELA -->
+  <div class="card tangela">
     <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
     <h3>🌿 Shiny Tangela</h3>
-    <a class="btn-tangela" href="registro-shiny-tangela.html">Abrir Registro</a>
+    <a href="registro-shiny-tangela.html">Abrir registro</a>
   </div>
 
 </div>
